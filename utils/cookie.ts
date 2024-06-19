@@ -1,4 +1,4 @@
-import { TOKEN_KEY } from "@/constants/common";
+import { TOKEN_KEY, USER } from "@/constants/common";
 import Cookies from "js-cookie";
 
 export const getValueFromCookie = (key: string) => {
@@ -11,4 +11,5 @@ export const setValueInCookie = (key: string, value: string) => {
 
 export const clearCookie = () => {
   Cookies.remove(TOKEN_KEY);
+  Cookies.remove(USER);
 };
